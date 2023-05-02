@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6ea;
+  scroll-behavior: smooth;
+}
+
+/* homepage */
+
+.home,
+.home-2 {
+  position: relative;
+  height: 100dvh;
+  max-width: 100dvw;
+}
+
+hr{
+    width: 80%;
+    margin:auto;
+    background: black;
+    opacity: .2;
+    height: .2rem;
+}
+
+.home-content {
+  margin-top: 5rem;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navigation-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #020300;
+}
+
+.navigation-bar .logo {
+  margin-left: 5rem;
+}
+
+.navigation-bar .logo img {
+  height: 120px;
+  display: flex;
+  align-items: start;
+}
+
+.nav-key {
+  display: flex;
+  gap: 8rem;
+  list-style: none;
+  margin-right: 10rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* home content  */
+
+.home-content .text-content {
+  padding: 60px 80px;
+  color: #020300;
+  height: 70%;
+}
+
+.home-content .text-content h1 {
+  font-size: 5rem;
+}
+
+.home-content .text-content p {
+  margin-top: 1rem;
+  max-width: 600px;
+  letter-spacing: 0.1rem;
+}
+
+.home-content .text-content a {
+  color: #020300;
+  text-decoration: none;
+}
+
+.home-content .text-content a .btn {
+  height: 4rem;
+  width: 14rem;
+  margin-top: 5rem;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  transition: 0.1s;
+}
+
+.home-content .text-content .btn:hover {
+  outline: 3px solid #020300;
+}
+
+.home-content .visual-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  object-fit: contain;
+}
+
+.home-content .visual-content img {
+  height: 100%;
+}
+
+.scroll-visual {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-visual .circle {
+  height: 3.8rem;
+  padding-top: 0.2rem;
+  width: 2rem;
+  outline: 3px solid #020300;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.scroll-visual .circle div {
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #020300;
+  border-radius: 1rem;
+  animation: scroll 1s linear infinite normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+    background-color: red;
+  }
+  50% {
+    transform: translateY(-50%);
+    background-color: rgb(177, 189, 49);
+  }
+  100% {
+    transform: translateY(-100%);
+    background-color: rgb(47, 144, 47);
+  }
+}
+
+/* section-2 home-2 */
+
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+}
+
+.shoe-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 55%;
+  outline: 1px solid red;
+}
+
+.shoe-1,
+.shoe-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.shoe-1 h1,
+.shoe-2 h1 {
+  font-size: 3rem;
+}
+
+.text-card {
+  height: 23rem;
+  width: 15rem;
+  /* outline: 3px solid gold; */
+}
+
+.shoe-1 img,
+.shoe-2 img {
+  height: 25rem;
+}
+
+/* slider-cSS */
+
+.slide {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.slider {
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.slider-container {
+  position: absolute;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.slider-card {
+  background-color: #afd0d6;
+  width: 300px;
+  height: 200px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.slider-button {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: aliceblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  outline: 2px solid rgb(255, 255, 255);
+  object-fit: cover;
+}
+
+.slider-button:hover {
+  background: rgb(180, 217, 249);
+}
+
+.slider-button img {
+  height: 100%;
+  width: 100%;
+}
+
+.slider_button--left {
+  left: 5px;
+}
+
+.slider_button--right {
+  right: 5px;
+}
+
+/*  slider css end */
