@@ -18,12 +18,12 @@ body {
   max-width: 100dvw;
 }
 
-hr{
-    width: 80%;
-    margin:auto;
-    background: black;
-    opacity: .2;
-    height: .2rem;
+hr {
+  width: 80%;
+  margin: auto;
+  background: black;
+  opacity: 0.2;
+  height: 0.2rem;
 }
 
 .home-content {
@@ -154,7 +154,9 @@ hr{
 }
 
 /* section-2 home-2 */
-
+.home-2 {
+  padding: 20px 40px;
+}
 
 .heading {
   width: 100%;
@@ -167,7 +169,6 @@ hr{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 55%;
-  outline: 1px solid red;
 }
 
 .shoe-1,
@@ -221,13 +222,13 @@ hr{
 
 .slider-card {
   background-color: #afd0d6;
-  width: 300px;
+  width: 283px;
   height: 200px;
-  border-radius: 40px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0 10px;
 }

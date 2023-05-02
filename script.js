@@ -9,13 +9,13 @@ const slide = document.querySelector(".slider-container");
 var count = 0;
 
 right.addEventListener("click", () => {
-    count = count - 320;
+    count = count - 294;
     slide.style.left = count + "px";
 });
 
 
 left.addEventListener("click", () => {
-  count = count + 320;
+  count = count + 294;
   slide.style.left = count + "px";
 });
 
