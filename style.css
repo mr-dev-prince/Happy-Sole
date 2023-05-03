@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  height: 8rem;
+  height: 5rem;
 }
 
 .navigation-bar {
@@ -53,7 +53,7 @@ body {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   opacity: 0.7;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 0 50px;
   cursor: pointer;
   text-decoration: none;
@@ -67,6 +67,7 @@ body {
 /* home content  */
 
 .home-content {
+  margin-top: 3rem;
   height: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -75,16 +76,16 @@ body {
 .home-content .text-content {
   padding: 60px 80px;
   color: #020300;
-  height: 72%;
+  height: 60%;
 }
 
 .home-content .text-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .home-content .text-content p {
   margin-top: 1rem;
-  height: 6rem;
+  height: 4rem;
   max-width: 600px;
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
@@ -96,14 +97,15 @@ body {
 }
 
 .home-content .text-content a .btn {
-  height: 4rem;
-  width: 14rem;
+  height: 3rem;
+  width: 13rem;
   margin-top: 5rem;
   outline: none;
   border: none;
   border-radius: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.2rem;
+  text-transform: uppercase;
   transition: 0.1s;
 }
 
@@ -115,7 +117,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 72%;
+  height: 60%;
 }
 
 .home-content .visual-content img {
@@ -124,7 +126,7 @@ body {
 
 .scroll {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 1.9rem;
   height: 4rem;
   width: 100%;
   display: flex;
