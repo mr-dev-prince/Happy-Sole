@@ -14,8 +14,8 @@ body {
 .home,
 .home-2 {
   position: relative;
-  height: 100dvh;
-  max-width: 100dvw;
+  height: 100vh;
+  max-width: 100vw;
 }
 
 hr {
