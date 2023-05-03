@@ -10,12 +10,15 @@ body {
 }
 
 /* homepage */
+.header {
+  height: 8rem;
+}
 
-.home,
-.home-2 {
+.home {
   position: relative;
   height: 100vh;
   max-width: 100vw;
+
 }
 
 hr {
@@ -27,7 +30,6 @@ hr {
 }
 
 .home-content {
-  margin-top: 5rem;
   height: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -43,22 +45,34 @@ hr {
 
 .navigation-bar .logo {
   margin-left: 5rem;
+
 }
 
-.navigation-bar .logo img {
-  height: 120px;
+.header .navigation-bar .logo img {
+  height: 8rem;
   display: flex;
   align-items: start;
 }
 
 .nav-key {
   display: flex;
-  gap: 8rem;
-  list-style: none;
-  margin-right: 10rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+}
+
+.nav-key li {
   letter-spacing: 0.1rem;
+  list-style: none;
+  text-transform: uppercase;
+  opacity: .7;
+  font-size: 1.6rem;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.nav-key li:hover{
+  opacity: 1;
 }
 
 /* home content  */
@@ -66,7 +80,7 @@ hr {
 .home-content .text-content {
   padding: 60px 80px;
   color: #020300;
-  height: 70%;
+  height: 72%;
 }
 
 .home-content .text-content h1 {
@@ -75,8 +89,10 @@ hr {
 
 .home-content .text-content p {
   margin-top: 1rem;
+  height: 6rem;
   max-width: 600px;
   letter-spacing: 0.1rem;
+  font-size: 1.1rem;
 }
 
 .home-content .text-content a {
@@ -104,8 +120,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70%;
-  object-fit: contain;
+  height: 72%;  
 }
 
 .home-content .visual-content img {
@@ -113,6 +128,7 @@ hr {
 }
 
 .scroll-visual {
+  margin-top: 5rem;
   height: 4rem;
   width: 100%;
   display: flex;
@@ -154,6 +170,7 @@ hr {
 }
 
 /* section-2 home-2 */
+
 .home-2 {
   padding: 20px 40px;
 }
@@ -186,7 +203,6 @@ hr {
 .text-card {
   height: 23rem;
   width: 15rem;
-  /* outline: 3px solid gold; */
 }
 
 .shoe-1 img,
