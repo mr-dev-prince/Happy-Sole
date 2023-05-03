@@ -10,29 +10,14 @@ body {
 }
 
 /* homepage */
-.header {
-  height: 8rem;
-}
-
 .home {
   position: relative;
   height: 100vh;
   max-width: 100vw;
-
 }
 
-hr {
-  width: 80%;
-  margin: auto;
-  background: black;
-  opacity: 0.2;
-  height: 0.2rem;
-}
-
-.home-content {
-  height: 70%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.header {
+  height: 8rem;
 }
 
 .navigation-bar {
@@ -45,7 +30,6 @@ hr {
 
 .navigation-bar .logo {
   margin-left: 5rem;
-
 }
 
 .header .navigation-bar .logo img {
@@ -62,20 +46,31 @@ hr {
 }
 
 .nav-key li {
-  letter-spacing: 0.1rem;
   list-style: none;
+}
+
+.nav-key li a {
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  opacity: .7;
+  opacity: 0.7;
   font-size: 1.6rem;
   margin: 0 50px;
   cursor: pointer;
+  text-decoration: none;
+  color: #020300;
 }
 
-.nav-key li:hover{
+.nav-key li a:hover {
   opacity: 1;
 }
 
 /* home content  */
+
+.home-content {
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .home-content .text-content {
   padding: 60px 80px;
@@ -120,14 +115,15 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 72%;  
+  height: 72%;
 }
 
 .home-content .visual-content img {
   height: 100%;
 }
 
-.scroll-visual {
+.scroll {
+  position: relative;
   margin-top: 5rem;
   height: 4rem;
   width: 100%;
@@ -136,7 +132,7 @@ hr {
   justify-content: center;
 }
 
-.scroll-visual .circle {
+.scroll .circle {
   height: 3.8rem;
   padding-top: 0.2rem;
   width: 2rem;
@@ -146,7 +142,7 @@ hr {
   justify-content: center;
   align-items: end;
 }
-.scroll-visual .circle div {
+.scroll .circle div {
   height: 1.7rem;
   width: 1.7rem;
   background-color: #020300;
@@ -167,6 +163,14 @@ hr {
     transform: translateY(-100%);
     background-color: rgb(47, 144, 47);
   }
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  background: black;
+  opacity: 0.2;
+  height: 0.2rem;
 }
 
 /* section-2 home-2 */
