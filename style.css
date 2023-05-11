@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4rem;
+  margin-right: 2.5rem;
 }
 
 .nav-key li {
@@ -126,7 +126,6 @@ body {
 
 .scroll {
   position: relative;
-  margin-top: 1.9rem;
   height: 4rem;
   width: 100%;
   display: flex;
@@ -178,20 +177,21 @@ hr {
 /* section-2 home-2 */
 
 .home-2 {
-  padding: 20px 40px;
+  min-height: 100vh;
+  padding: 20px 20px;
 }
 
 .heading {
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Satisfy", cursive;
 }
 
 .shoe-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 55%;
+  height: 50%;
 }
 
 .shoe-1,
@@ -199,16 +199,24 @@ hr {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
+
 .shoe-1 h1,
 .shoe-2 h1 {
   font-size: 3rem;
 }
 
 .text-card {
-  height: 23rem;
-  width: 15rem;
+  padding: 10px 20px;
+  height: 25rem;
+  width: 20rem;
+  /* outline: 1px solid greenyellow; */
+}
+
+.text-card h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .shoe-1 img,
@@ -220,12 +228,11 @@ hr {
 
 .slide {
   position: relative;
-  margin-top: 2rem;
 }
 
 .slider {
   position: relative;
-  height: 220px;
+  height: 200px;
   display: flex;
   align-items: center;
   overflow-x: hidden;
@@ -243,16 +250,29 @@ hr {
 }
 
 .slider-card {
+  position: relative;
   background-color: #afd0d6;
   width: 283px;
-  height: 200px;
+  height: 180px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 10px;
+}
+
+.slider-card img {
+  position: absolute;
+  right: 0;
+  height: 80%;
+  transition: 1s;
+}
+
+.slider-card img:hover {
+  scale: 1.1;
 }
 
 .slider-button {
@@ -286,3 +306,44 @@ hr {
 }
 
 /*  slider css end */
+
+/* popular section starts */
+
+.collection {
+  min-height: 100vh;
+  position: relative;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.collection_items {
+  outline: 2px solid red;
+  border-radius: 2rem;
+}
+
+/* popular section ends */
+
+/* category section starts */
+
+.category {
+  min-height: 100vh;
+  position: relative;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.category_box {
+  outline: 2px solid maroon;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.category_box:hover{
+  scale: 1.02;
+  box-shadow: 0 0 8px 3px #86fc1e;
+}
