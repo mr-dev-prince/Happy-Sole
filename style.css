@@ -58,9 +58,11 @@ body {
   color: #020300;
 }
 
-.navigation-bar .nav-key li a:hover {
-  opacity: 1;
+.header ul li.active a,
+.header ul li:hover a {
+  color: red;
 }
+
 
 /* home page content  */
 
@@ -168,13 +170,6 @@ body {
   }
 }
 
-hr {
-  width: 80%;
-  margin: auto;
-  background: black;
-  opacity: 0.2;
-  height: 0.2rem;
-}
 
 /* collections*/
 
