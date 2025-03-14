@@ -231,6 +231,7 @@ body {
 
 .slide {
   position: relative;
+  background-color: rgba(86, 148, 86, 0.2);
 }
 
 .slider {
@@ -311,57 +312,163 @@ body {
 /*  slider css end */
 
 /* popular section starts */
-#popular{
+#popular {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(86, 148, 86, 0.4);
+  padding: 20px;
 }
-#popular h1{
+
+#popular h1 {
   width: 100%;
   text-align: center;
   font-size: 3rem;
   font-family: "Satisfy", cursive;
+  margin-bottom: 20px;
 }
+
 #popular .popular_class {
-  min-height: 100vh;
-  position: relative;
-  padding: 20px 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
 }
+
 #popular .popular_items {
-  outline: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
   border-radius: 2rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+#popular .popular_items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* popular section ends */
 
 /* category section starts */
-#category{
+#category {
   background-color: rgba(86, 148, 86, 0.5);
-}
-#category h1{
-  width: 100%;
+  padding: 40px 20px;
   text-align: center;
+}
+
+#category h1 {
   font-size: 3rem;
   font-family: "Satisfy", cursive;
+  margin-bottom: 20px;
 }
+
 #category .category_class {
-  min-height: 100vh;
-  position: relative;
-  padding: 20px 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #category .category_box {
-  outline: 2px solid maroon;
+  border: 2px solid maroon;
   border-radius: 2rem;
   cursor: pointer;
-  transition: 1s;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* Fixed height for uniformity */
+}
+
+#category .category_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 #category .category_box:hover {
-  scale: 1.02;
-  box-shadow: 0 0 8px 3px #86fc1e;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 3px #86fc1e;
+}
+
+/* category section ends */
+
+
+
+/* footer section */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f8b400;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f8b400;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
 }
